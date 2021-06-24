@@ -1,0 +1,40 @@
+
+<!--Header with logo, side menu and the search button-->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>
+      <div id="logo-top"><img src="assets/images/logo.png"></div>
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu" color="danger"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <img src="assets/images/neverland.jpg">
+  </ion-card>
+  <div id="top-information-container">
+      <p>2020</p>
+      <p>TV</p>
+      <p>3u 56m</p>
+  </div>
+  <ion-item lines="none">
+    Where to WATCH?
+    <ion-buttons slot="end"> <!--The icon goes to the end of the list-->
+      <ion-button>
+        <ion-icon slot="icon-only" name="chevron-forward" size="small" color="dark"></ion-icon> <!--The icon > on the end of the list-->
+      </ion-button>
+    </ion-buttons>
+  </ion-item>
+    <ion-card>
+        <img src="assets/images/hbomax.jpg">
+      </ion-card>
+  <ion-item lines="none">
+      Information
+  </ion-item>
+  <div id="information">
+      <ion-button color="success">Trailer</ion-button>
+      <ion-button color="danger">Behind the scenes</ion-button>
+  </div>
+</ion-content>
