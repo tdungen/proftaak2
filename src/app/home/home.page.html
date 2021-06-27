@@ -1,0 +1,115 @@
+<!--Header with logo, side menu and the search button-->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>
+      <div id="logo-top"><img src="assets/images/logo.png"></div>
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu" color="danger"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!--The slider on top of the screen. 5 Different movies with animation-->
+<ion-slides class="slides-on-top" [options]='slidertop'> <!--Ion slide class slides-on-top but the call on is slideOpts1-->
+  <ion-slide>
+    <ion-card>
+      <img src="assets/images/theswamp.jpg">
+    </ion-card>
+  </ion-slide>
+  <ion-slide>
+    <ion-card>
+      <img src="assets/images/greenland.jpg">
+    </ion-card>
+  </ion-slide>
+  <ion-slide>
+    <ion-card>
+      <img src="assets/images/armyofdead.jpg">
+    </ion-card>
+  </ion-slide>
+  <ion-slide>
+    <ion-card>
+      <img src="assets/images/neverland.jpg">
+    </ion-card>
+  </ion-slide>
+  <ion-slide>
+    <ion-card>
+      <img src="assets/images/inter.jpg">
+    </ion-card>
+  </ion-slide>
+</ion-slides>
+
+
+<!--Slider for the category's. DISCOVER, POPULAIR and CATEGORIES-->
+<ion-slides [options]='slideOpts2'> <!--slideOpts2 call up-->
+  <ion-slide>
+    <div class="category">
+      <a href="/discovery"><p>DISCOVERY</p></a>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div class="category">
+      <a href="/populair"><p>POPULAIR</p></a>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div class="category">
+      <a href="/categories"><p>CATEGORIES</p></a>
+    </div>
+  </ion-slide>
+</ion-slides>
+
+<!--The item list for My list with the movies. It is still hardcoded with no database. -->
+<ion-item lines="none">
+  My list
+  <ion-buttons slot="end"> <!--The icon goes to the end of the list-->
+    <ion-button>
+      <ion-icon slot="icon-only" name="chevron-forward" size="small" color="dark"></ion-icon> <!--The icon > on the end of the list-->
+    </ion-button>
+  </ion-buttons>
+</ion-item>
+<ion-slides class="listSlides" [options]="slideOpts3"> <!--Ion slide class listSlides but the call on is slideOpts3-->
+  <ion-slide>
+    <div>
+      <a href="/detail"><img src="assets/images/starwars.jpg"></a>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <img src="assets/images/capmarvel.jpg">
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <img src="assets/images/social.jpg">
+    </div>
+  </ion-slide>
+</ion-slides>
+<!--The item list for populair on netflix. The top 3 most populair movie on netflix -->
+<ion-item lines="none">
+  Popular on Netflix
+  <ion-buttons slot="end"> <!--The icon goes to the end of the list-->
+    <ion-button>
+      <ion-icon slot="icon-only" name="chevron-forward" size="small" color="dark"></ion-icon> <!--The icon > on the end of the list-->
+    </ion-button>
+  </ion-buttons>
+</ion-item>
+<ion-slides class="listSlides" [options]="slideOpts3"> <!--Ion slide class listSlides but the call on is slideOpts3-->
+  <ion-slide>
+    <div>
+      <img src="assets/images/5th.jpg">
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <img src="assets/images/divergent.jpg">
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <img src="assets/images/ted.jpg">
+    </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
