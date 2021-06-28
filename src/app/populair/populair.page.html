@@ -1,0 +1,127 @@
+<!--Header with logo, side menu and the search button-->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>
+      <div id="logo-top"><img src="assets/images/logo.png"></div>
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu" color="danger"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-item lines="none">
+  <h3>Top 20 Most Populair Films</h3>
+  <ion-buttons slot="end"> <!--The icon goes to the end of the list-->
+    <ion-button>
+      <ion-icon slot="icon-only" name="chevron-forward" size="small" color="dark"></ion-icon> <!--The icon > on the end of the list-->
+    </ion-button>
+  </ion-buttons>
+</ion-item>
+
+<ion-slides class="slides-on-top" [options]='slidertop'> <!--Ion slide class slides-on-top but the call on is slideOpts1-->
+  <ion-slide>
+    <div>
+      <p class="top-number">1</p><a href="/starwars"><img src="assets/images/starwars.jpg"></a><h2>Starwars The Last Jedi</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">2</p><a href="/captainmarvel"><img src="assets/images/capmarvel.jpg"></a><h2>Captain Marvel</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">3</p><a href="/socialdillema"><img src="assets/images/social.jpg"></a><h2>The Social Dilemma</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">4</p><a href="/joker"><img src="assets/images/joker.jpg"></a><h2>Joker</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">5</p><a href="/tellme"><img src="assets/images/tellmewhoiam.jpg"></a><h2>Tell Me Who I Am</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">6</p><a href="/neverland"><img src="assets/images/neverland2.jpg"></a><h2>Leaving Neverland</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">7</p><a href="/fast"><img src="assets/images/f8.jpg"></a><h2>Fast And Furious 8</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">8</p><a href="/ted"><img src="assets/images/ted.jpg"></a><h2>Ted</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">9</p><a href="/voyager"><img src="assets/images/voyager.jpg"></a><h2>Voyager</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">10</p><a href="/divergent"><img src="assets/images/divergent.jpg"></a><h2>Divergent</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">11</p><a href="/wave"><img src="assets/images/5th.jpg"></a><h2>The 5th Wave</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">12</p><a href="/armyofdead"><img src="assets/images/armyofdeadbig.jpg"></a><h2>Army of Dead</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">13</p><a href="/greenland"><img src="assets/images/greenlandbig.jpg"></a><h2>Greenland</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">14</p><a href="/place"><img src="assets/images/quietplace.jpg"></a><h2>A Quiet Place</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">15</p><a href="/split"><img src="assets/images/split.jpg"></a><h2>Split</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">16</p><a href="/jumanji"><img src="assets/images/jumanji.jpg"></a><h2>Jumanji The Next Level</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">17</p><a href="/hero"><img src="assets/images/thehero.jpg"></a><h2>The Hero</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">18</p><a href="/hell"><img src="assets/images/7days.jpg"></a><h2>7 Days In Hell</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">19</p><a href="/lionking"><img src="assets/images/lionking.jpg"></a><h2>The Lion King</h2>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <p class="top-number">20</p><a href="/blackpanther"><img src="assets/images/blackpanther.jpg"></a><h2>Black Panther</h2>
+    </div>
+  </ion-slide>
+</ion-slides>
+  
+</ion-content>
+  

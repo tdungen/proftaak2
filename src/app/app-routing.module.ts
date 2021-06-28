@@ -71,6 +71,46 @@ const routes: Routes = [
     path: 'joker',
     loadChildren: () => import('./joker/joker.module').then( m => m.JokerPageModule)
   },
+  {
+    path: 'populair',
+    loadChildren: () => import('./populair/populair.module').then( m => m.PopulairPageModule)
+  },
+  {
+    path: 'tellme',
+    loadChildren: () => import('./tellme/tellme.module').then( m => m.TellmePageModule)
+  },
+  {
+    path: 'voyager',
+    loadChildren: () => import('./voyager/voyager.module').then( m => m.VoyagerPageModule)
+  },
+  {
+    path: 'place',
+    loadChildren: () => import('./place/place.module').then( m => m.PlacePageModule)
+  },
+  {
+    path: 'split',
+    loadChildren: () => import('./split/split.module').then( m => m.SplitPageModule)
+  },
+  {
+    path: 'jumanji',
+    loadChildren: () => import('./jumanji/jumanji.module').then( m => m.JumanjiPageModule)
+  },
+  {
+    path: 'hero',
+    loadChildren: () => import('./hero/hero.module').then( m => m.HeroPageModule)
+  },
+  {
+    path: 'hell',
+    loadChildren: () => import('./hell/hell.module').then( m => m.HellPageModule)
+  },
+  {
+    path: 'lionking',
+    loadChildren: () => import('./lionking/lionking.module').then( m => m.LionkingPageModule)
+  },
+  {
+    path: 'blackpanther',
+    loadChildren: () => import('./blackpanther/blackpanther.module').then( m => m.BlackpantherPageModule)
+  },
 ];
 
 @NgModule({
